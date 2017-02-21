@@ -21,12 +21,15 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-no-hankaku-kana \
     textlint-rule-no-mix-dearu-desumasu \
     textlint-rule-no-nfd \
+    textlint-rule-no-todo \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \ 
     textlint-rule-preset-jtf-style \
     textlint-rule-prh \
     textlint-rule-sentence-length \
-    textlint-rule-spellcheck-tech-word 
+    textlint-rule-spellcheck-tech-word \
+    \
+    textlint-plugin-html
 
 
 RUN npm install -g textlint $TEXTLINT_PLUGINS 
