@@ -33,7 +33,9 @@ RUN npm install -g textlint $TEXTLINT_PLUGINS
 
 WORKDIR /docs
 
+# Samples
 COPY .textlintrc /
+COPY prh.yml /
 
 ENTRYPOINT ["textlint"]
 
