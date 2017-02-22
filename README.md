@@ -29,7 +29,36 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
     sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /prh.yml
 
 
-## Not installed plugins (sorry, not for me)
+## Preset installed
 
-* no-exclamation-question-mark
+* textlint-rule-preset-ja-technical-writing
+
+    * textlint-rule-ja-no-abusage
+    * textlint-rule-ja-no-mixed-period
+    * textlint-rule-ja-no-successive-word
+    * textlint-rule-ja-no-weak-phrase
+    * textlint-rule-max-comma
+    * textlint-rule-max-kanji-continuous-len
+    * textlint-rule-max-ten
+    * textlint-rule-no-double-negative-ja
+    * textlint-rule-no-doubled-conjunction
+    * textlint-rule-no-doubled-conjunctive-particle-ga
+    * textlint-rule-no-doubled-joshi
+    * textlint-rule-no-dropping-the-ra
+    * textlint-rule-no-exclamation-question-mark
+    * textlint-rule-no-hankaku-kana
+    * textlint-rule-no-mix-dearu-desumasu
+    * textlint-rule-no-nfd
+    * textlint-rule-preset-jtf-style
+    * textlint-rule-sentence-length
+
+* textlint-rule-preset-ja-spacing
+
+    * textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana
+    * textlint-rule-ja-no-space-around-parentheses
+    * textlint-rule-ja-no-space-between-full-width
+    * textlint-rule-ja-space-between-half-and-full-width
+    * textlint-rule-ja-space-after-exclamation
+    * textlint-rule-ja-space-after-question
+    * textlint-rule-ja-space-around-code
 
