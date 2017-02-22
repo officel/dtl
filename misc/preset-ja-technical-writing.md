@@ -2,17 +2,19 @@
 
 see: https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing
 
-エラー文言の本文が既にエラー対象であると。
+エラー文言の本文が既にエラー対象のようです。
 
-* no-doubled-joshi: 一文に二回以上利用されている助詞 "は" がみつかりました。
+* no-doubled-joshi
 
-    これは誤解されやすい表現は含んでいます。
+これは誤解されやすい表現は含んでいます。
 
-* ja-no-mixed-period: 文末が"。"で終わっていません。
+* ja-no-mixed-period
 
-    文末にまるを置かなければいけません
+文末にまるを置かなければいけません
 
 * ja-no-abusage: 誤用
 
-    例外を捕捉は例外を補足が正しいようです。
+例外を捕捉は例外を補足が正しいようです。
 
+* no-hankaku-kana, no-exclamation-question-mark
+全角と半角ｶﾅとか、サムライJapanとか？
