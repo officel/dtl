@@ -12,6 +12,9 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-prh \
     textlint-rule-spellcheck-tech-word \
     \
+    textlint-filter-rule-comments \
+    textlint-filter-rule-whitelist \
+    \
     textlint-plugin-html
 
 
