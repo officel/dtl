@@ -27,3 +27,9 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
 
     sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /.textlintrc
     sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /prh.yml
+
+
+## Not installed plugins (sorry, not for me)
+
+* no-exclamation-question-mark
+

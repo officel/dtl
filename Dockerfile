@@ -17,7 +17,6 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-no-doubled-conjunctive-particle-ga \
     textlint-rule-no-doubled-joshi \
     textlint-rule-no-dropping-the-ra \
-    textlint-rule-no-exclamation-question-mark \
     textlint-rule-no-hankaku-kana \
     textlint-rule-no-mix-dearu-desumasu \
     textlint-rule-no-nfd \
