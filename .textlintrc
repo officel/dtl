@@ -8,7 +8,7 @@
     "rules": {
         "no-todo": true,
         "preset-ja-spacing": true,
-        "preset-ja-technical-writing": [
+        "preset-ja-technical-writing": {
             "sentence-length": {
                 max: 90
             },
@@ -19,7 +19,10 @@
                 max: 3
             },
             "max-kanji-continuous-len": {
-                max: 5
+                max: 5,
+                allow: [
+                    "倍精度浮動小数点"
+                ]
             },
             "arabic-kanji-numbers": true,
             "no-mix-dearu-desumasu": {
@@ -39,12 +42,21 @@
                 "min_interval": 1
             },
             "no-nfd": true,
-            "no-exclamation-question-mark": true,
+            "no-exclamation-question-mark": {
+                // allow to use !
+                "allowHalfWidthExclamation": false,
+                // allow to use ！
+                "allowFullWidthExclamation": false,
+                // allow to use ?
+                "allowHalfWidthQuestion": false,
+                // allow to use ？
+                "allowFullWidthQuestion": false
+            },
             "no-hankaku-kana": true,
             "ja-no-weak-phrase": true,
             "ja-no-successive-word": true,
             "ja-no-abusage": true
-         ],
+         },
         "prh": {
             "rulePaths": [
                 "./prh.yml"
