@@ -10,12 +10,20 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
     cd dtl
     sudo docker build --rm -t officel/dtl .
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl misc/test01.md
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl -f pretty-error misc/test01.md
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl misc/misc/preset-ja-technical-writing.md
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --fix --dry-run --format diff misc/test01.md
+    # OK, Not have rules, textlint do not anything
+    # see sample rules and set. ls -l .textlintrc*
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl -f pretty-error misc/*
+    # preset-ja-technical-writing
+
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing misc/preset-ja-technical-writing.md
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing -f pretty-error misc/preset-ja-technical-writing.md
+
+    # preset-jtf-style
+
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style misc/preset-jtf-style.md
+
 
 ## Check?
 
@@ -25,7 +33,7 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
 
 ## Samples
 
-    sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /.textlintrc
+    sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /.textlintrc_preset-ja-technical-writing
     sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /prh.yml
 
 
@@ -49,7 +57,6 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
     * textlint-rule-no-hankaku-kana
     * textlint-rule-no-mix-dearu-desumasu
     * textlint-rule-no-nfd
-    * textlint-rule-preset-jtf-style
     * textlint-rule-sentence-length
 
 * textlint-rule-preset-ja-spacing

@@ -9,6 +9,7 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-no-todo \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \ 
+    textlint-rule-preset-jtf-style \
     textlint-rule-prh \
     textlint-rule-spellcheck-tech-word \
     \
@@ -24,6 +25,7 @@ WORKDIR /docs
 
 # Samples
 COPY .textlintrc /
+COPY .textlintrc_preset-ja-technical-writing /
 COPY prh.yml /
 
 ENTRYPOINT ["textlint"]
