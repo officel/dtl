@@ -6,7 +6,7 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
 
 ## usage
 
-    git clone
+    git clone git@github.com:officel/dtl.git
     cd dtl
     sudo docker build --rm -t officel/dtl .
 
@@ -20,9 +20,11 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
     sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing misc/preset-ja-technical-writing.md
     sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing -f pretty-error misc/preset-ja-technical-writing.md
 
-    # preset-jtf-style
+    # preset-jtf-style(fix me)
 
     sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style misc/preset-jtf-style.md
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style -f pretty-error misc/preset-jtf-style.md
+    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style --fix misc/preset-jtf-style.md
 
 
 ## Check?
@@ -58,6 +60,8 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
     * textlint-rule-no-mix-dearu-desumasu
     * textlint-rule-no-nfd
     * textlint-rule-sentence-length
+
+* textlint-rule-preset-JTF-style
 
 * textlint-rule-preset-ja-spacing
 
