@@ -1,0 +1,65 @@
+{
+    "plugins": [
+        "html"
+    ],
+    "filters": {
+        "comments": true
+    },
+    "rules": {
+        "no-todo": true,
+        "preset-ja-spacing": true,
+        "preset-ja-technical-writing": {
+            "sentence-length": {
+                max: 160
+            },
+            "max-comma": {
+                max: 3
+            },
+            "max-ten": {
+                max: 5
+            },
+            "max-kanji-continuous-len": {
+                max: 8,
+                allow: [
+                    "倍精度浮動小数点"
+                ]
+            },
+            "arabic-kanji-numbers": true,
+            "no-mix-dearu-desumasu": {
+                "preferInHeader": "",
+                "preferInBody": "ですます",
+                "preferInList": "である",
+                "strict": true
+            },
+            "ja-no-mixed-period": {
+                "periodMark": "。"
+            },
+            "no-double-negative-ja": true,
+            "no-dropping-the-ra": true,
+            "no-doubled-conjunctive-particle-ga": true,
+            "no-doubled-conjunction": true,
+            "no-doubled-joshi": {
+                "min_interval" : 1,
+                "strict": false,
+                "allow": ["も","や"],
+                "separatorChars": ["。",,"?","!","？","！"]
+            },
+            "no-nfd": true,
+            "no-exclamation-question-mark": false,
+            "no-hankaku-kana": true,
+            "ja-no-weak-phrase": false,
+            "ja-no-successive-word": true,
+            "ja-no-abusage": true
+         },
+        "preset-jtf-style": {
+            "2.1.8.算用数字": false,
+            "4.2.9.ダッシュ(-)": false,
+        },
+        "prh": {
+            "rulePaths": [
+                "./prh.yml"
+            ]
+        },
+        "spellcheck-tech-word": false,
+    }
+}
