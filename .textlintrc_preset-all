@@ -7,7 +7,7 @@
     },
     "rules": {
         "no-todo": true,
-        "preset-ja-spacing": false,
+        "preset-ja-spacing": true,
         "preset-ja-technical-writing": {
             "sentence-length": {
                 max: 90
@@ -55,12 +55,11 @@
             "no-hankaku-kana": true,
             "ja-no-weak-phrase": true,
             "ja-no-successive-word": true,
-            "ja-no-abusage": true,
-            "preset-jtf-style": {
-                "1.2.2.ピリオド(.)とカンマ(,)": false
-            }
-
+            "ja-no-abusage": true
          },
+        "preset-jtf-style": {
+            "1.2.2.ピリオド(.)とカンマ(,)": false
+        },
         "prh": {
             "rulePaths": [
                 "./prh.yml"
