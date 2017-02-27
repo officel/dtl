@@ -14,6 +14,7 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-spellcheck-tech-word \
     \
     textlint-filter-rule-comments \
+    textlint-filter-rule-node-types \
     textlint-filter-rule-whitelist \
     \
     textlint-plugin-html
