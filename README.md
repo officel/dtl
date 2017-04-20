@@ -7,7 +7,7 @@ Dockerfile to build a container image containing [textlint](https://textlint.git
 ## tl;dr
 
 * `docker pull officel/dtl`
-* `alias='docker run --rm -it -v `pwd`:/docs officel/dtl'` to .bashrc (or something)
+* `alias='docker run --rm -it -v \`pwd\`:/docs officel/dtl'` to .bashrc (or something)
 * `cd your/docs/` .textlintrc on dir
 * `textlint *`
 * That's all
