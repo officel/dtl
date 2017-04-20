@@ -4,39 +4,47 @@
 
 Dockerfile to build a container image containing [textlint](https://textlint.github.io/).
 
+## tl;dr
+
+* `docker pull officel/dtl`
+* `alias='docker run --rm -it -v `pwd`:/docs officel/dtl'` to .bashrc (or something)
+* `cd your/docs/` .textlintrc on dir
+* `textlint *`
+* That's all
+
 ## usage
 
     git clone git@github.com:officel/dtl.git
     cd dtl
-    sudo docker build --rm -t officel/dtl .
+    docker build --rm -t officel/dtl .
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl misc/misc/preset-ja-technical-writing.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl misc/misc/preset-ja-technical-writing.md
 
     # OK, Not have rules, textlint do not anything
     # see sample rules and set. ls -l .textlintrc*
 
     # preset-ja-technical-writing
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing misc/preset-ja-technical-writing.md
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing -f pretty-error misc/preset-ja-technical-writing.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing misc/preset-ja-technical-writing.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-ja-technical-writing -f pretty-error misc/preset-ja-technical-writing.md
 
     # preset-jtf-style(fix me)
 
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style misc/preset-jtf-style.md
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style -f pretty-error misc/preset-jtf-style.md
-    sudo docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style --fix misc/preset-jtf-style.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style misc/preset-jtf-style.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style -f pretty-error misc/preset-jtf-style.md
+    docker run --rm -it -v `pwd`:/docs officel/dtl --config .textlintrc_preset-jtf-style --fix misc/preset-jtf-style.md
 
 
 ## Check?
 
-    sudo docker run --entrypoint="" officel/dtl node --version
-    sudo docker run --entrypoint="" officel/dtl npm --version
-    sudo docker run --rm -it --entrypoint="/bin/ash" -v `pwd`:/docs officel/dtl
+    docker run --entrypoint="" officel/dtl node --version
+    docker run --entrypoint="" officel/dtl npm --version
+    docker run --rm -it --entrypoint="/bin/ash" -v `pwd`:/docs officel/dtl
 
 ## Samples
 
-    sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /.textlintrc_preset-ja-technical-writing
-    sudo docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /prh.yml
+    docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /.textlintrc_preset-ja-technical-writing
+    docker run --rm -it --entrypoint="cat" -v `pwd`:/docs officel/dtl /prh.yml
 
 
 ## Preset installed
