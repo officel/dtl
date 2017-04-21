@@ -12,6 +12,7 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-preset-jtf-style \
     textlint-rule-prh \
     textlint-rule-spellcheck-tech-word \
+    textlint-rule-general-novel-style-ja \
     \
     textlint-filter-rule-comments \
     textlint-filter-rule-node-types \
