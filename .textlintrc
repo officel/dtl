@@ -1,8 +1,11 @@
 {
     "plugins": [
+        "html"
     ],
     "filters": {
+        "comments": true
     },
     "rules": {
+        "no-todo": true
     }
 }
