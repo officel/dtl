@@ -30,6 +30,6 @@ COPY .textlintrc /
 COPY .textlintrc_preset-ja-technical-writing /
 COPY prh.yml /
 
-ENTRYPOINT ["textlint"]
+# ENTRYPOINT ["textlint"]
 
-CMD ["-h"]
+CMD ["textlint", "-h"]
