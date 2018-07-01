@@ -14,6 +14,12 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-spellcheck-tech-word \
     textlint-rule-general-novel-style-ja \
     \
+    textlint-rule-ja-unnatural-alphabet \
+    textlint-rule-ja-no-redundant-expression \
+    textlint-rule-ja-no-abusage \
+    textlint-rule-no-double-negative-ja \
+    textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet \
+    \
     textlint-filter-rule-comments \
     textlint-filter-rule-node-types \
     textlint-filter-rule-whitelist \
