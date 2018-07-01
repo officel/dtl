@@ -19,6 +19,8 @@ ENV TEXTLINT_PLUGINS \
     textlint-rule-ja-no-abusage \
     textlint-rule-no-double-negative-ja \
     textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet \
+    textlint-rule-ja-no-successive-word \
+    textlint-rule-ja-yahoo-kousei \
     \
     textlint-filter-rule-comments \
     textlint-filter-rule-node-types \
